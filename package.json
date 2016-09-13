@@ -1,0 +1,28 @@
+{
+  "name": "js-next",
+  "version": "1.0.0",
+  "description": "A JavaScript next generation apps scaffolder",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dieguitoweb/js-next.git"
+  },
+  "keywords": [
+    "flowtype",
+    "ES6",
+    "scaffolder",
+    "generator"
+  ],
+  "author": "Diego Costantino",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dieguitoweb/js-next/issues"
+  },
+  "homepage": "https://github.com/dieguitoweb/js-next#readme",
+  "dependencies": {
+    "chalk": "^1.1.3"
+  }
+}
