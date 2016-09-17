@@ -1,7 +1,10 @@
+'use strict'
+
 const chalk = require('chalk');
+
 const log = require('./lib/log');
 const fsHelpers = require('./lib/fs-helpers');
-
+const task = require('./lib/task');
   
 if (!process.argv[2]) {
   log.err('app name is required');
@@ -11,10 +14,17 @@ if (!process.argv[2]) {
 
 const appName = process.argv[2];
 if (fsHelpers.dirExists(appName)) {
-  log.err('app "' + appName  + '" already exists!');
+  log.err('A folder ' + appName  + ' already exists!');
   process.exit(1);
 }
 
+const tasks = [task.init];
+for(let i=0; i<tasks.length; i++) {
+  if (tasks[i](appName, log) < 0) {
+    log.err(task.errorMsg);
+    break;
+  }
+}
 
 
 
