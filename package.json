@@ -18,11 +18,13 @@
   ],
   "author": "Diego Costantino",
   "license": "MIT",
+  "bin": "./index.js",
   "bugs": {
     "url": "https://github.com/dieguitoweb/js-next/issues"
   },
   "homepage": "https://github.com/dieguitoweb/js-next#readme",
   "dependencies": {
-    "chalk": "^1.1.3"
+    "chalk": "^1.1.3",
+    "cross-spawn": "^4.0.0"
   }
 }

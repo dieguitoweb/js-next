@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 'use strict'
 
 const chalk = require('chalk');
@@ -25,6 +26,7 @@ for(let i=0; i<tasks.length; i++) {
     break;
   }
 }
+console.log(process.cwd());
 
 
 
