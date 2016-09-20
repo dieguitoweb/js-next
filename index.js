@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+
 'use strict'
 
 const chalk = require('chalk');
@@ -6,12 +7,13 @@ const chalk = require('chalk');
 const log = require('./lib/log');
 const fsHelpers = require('./lib/fs-helpers');
 const task = require('./lib/task');
-  
-if (!process.argv[2]) {
-  log.err('app name is required');
-  log.text('usage: js-next app_name');
-  process.exit(1);
-}
+const testPreCondition = require('./lib/utils').testPreCondition;
+
+testPreCondition(process.argv[2], () => {
+ log.err('app name is required');
+ log.text('usage: js-next app_name');
+});
+
 
 const appName = process.argv[2];
 if (fsHelpers.dirExists(appName)) {
@@ -26,7 +28,6 @@ for(let i=0; i<tasks.length; i++) {
     break;
   }
 }
-console.log(process.cwd());
 
 
 
