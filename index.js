@@ -17,7 +17,7 @@ testPreCondition(process.argv[2], () => {
 
 const appName = process.argv[2];
 testPreCondition(!fsHelpers.dirExists(appName), () => {
-  log.err('A folder ' + appName  + ' already exists!');
+  log.err(`A folder ${appName} already exists!`);
 });
 
 const tasks = [task.init];
