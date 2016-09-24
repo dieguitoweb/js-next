@@ -20,7 +20,7 @@ testPreCondition(!fsHelpers.dirExists(appName), () => {
   log.err(`A folder ${appName} already exists!`);
 });
 
-const tasks = [task.init, task.updatePackage];
+const tasks = [task.init, task.updatePackage, task.install];
 for(let i=0; i<tasks.length; i++) {
   if (tasks[i](appName, log) < 0) {
     log.err(task.errorMsg);
