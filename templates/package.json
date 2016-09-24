@@ -4,9 +4,7 @@
     "build": "BABEL_ENV=jsnext babel src -d lib",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  { "engines" :
-    { "node" : ">=5" }
-  },
+  "engines" : { "node" : ">=5" },
   "devDependencies": {
     "babel": "^6.5.2",
     "babel-cli": "^6.14.0",
@@ -16,8 +14,8 @@
   "babel": {
     "env": {
       "jsnext": {
-  "presets": ["es2015"],
-  "plugins": ["transform-flow-strip-types"]
+	"presets": ["es2015"],
+	"plugins": ["transform-flow-strip-types"]
       }
     }
   }
