@@ -20,10 +20,10 @@ Get the best of modern tools, using just what you know and with no hassle.
 `js-next appName`
 
 ## Scripts
-`npm run check`
+`npm run prebuild` Flow check
 
-`npm run lint`
+`npm run lint` ESlint check
 
-`npm run build`
+`npm run build` Build source in `src`
 
-`npm test`
+`npm test` Run Jest
