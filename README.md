@@ -2,8 +2,11 @@
 A JavaScript next generation apps scaffolder
 
 
-Create "next generation" node apps with no hassle.
-js-next will create for you a boilerplate just leveraging on npm capabilities, with support for:
+Create *"next generation"* node apps with no hassle.
+
+js-next will create for you a boilerplate with a minimal build system that it just leverages on npm capabilities.
+
+Comes with support for:
   - [Flow](https://flowtype.org)
   - [Babel](https://babeljs.io)
   - [Jest](https://facebook.github.io/jest/)
@@ -12,6 +15,7 @@ js-next will create for you a boilerplate just leveraging on npm capabilities, w
 ## Philosophy
 Get the best of modern tools, using just what you know and with no hassle.
 
+No external script or build systems, just the `npm scripts`.
 
 ## Installation
 ` npm install -g js-next `
@@ -19,7 +23,7 @@ Get the best of modern tools, using just what you know and with no hassle.
 ## Usage
 `js-next appName`
 
-## Scripts
+## NPM Scripts
 `npm run prebuild` Flow check
 
 `npm run lint` ESlint check
@@ -27,3 +31,8 @@ Get the best of modern tools, using just what you know and with no hassle.
 `npm run build` Build source in `src`
 
 `npm test` Run Jest
+
+## Roadmap
+- [ ] `--no-jest` option
+- [ ] `--no-eslint` option
+
