@@ -9,6 +9,8 @@ const fsHelpers = require('./lib/fs-helpers');
 const task = require('./lib/task');
 const testPreCondition = require('./lib/utils').testPreCondition;
 
+log.ok('***** JS-NEXT *****');
+
 testPreCondition(process.argv[2], () => {
  log.err('app name is required');
  log.text('usage: js-next app_name');
@@ -27,6 +29,3 @@ for(let i=0; i<tasks.length; i++) {
     break;
   }
 }
-
-
-
