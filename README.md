@@ -35,4 +35,5 @@ No external script or build systems, just the `npm scripts`.
 ## Roadmap
 - [ ] `--no-jest` option
 - [ ] `--no-eslint` option
+- [ ] test coverage
 
